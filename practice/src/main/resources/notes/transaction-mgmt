@@ -1,0 +1,19 @@
+What are Database Transactions?
+A Database transaction is a
+single logical unit of work which accesses and possibly modifies the contents of a database.
+
+AUTO-COMMIT::
+=============
+Auto-commit mode means that when a statement is completed,
+ the method commit is called on that statement automatically.
+  Auto-commit in effect makes every SQL statement a transaction
+
+TRANSACTION::
+=============
+An application transaction is a sequence of application actions that are considered
+    as a single logical unit by the application
+If due to any reason any one of the above action fails
+        then the other action should also be roll backed
+
+NOTE::  By default the spring boot transaction is auto commit.
+
